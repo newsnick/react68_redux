@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+/* import ParentComponent from './ParentComponent'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <ParentComponent />
 }
 
-export default App;
+export default App
+ */
+
+// import React from 'react'
+// import { Provider } from 'react-redux'
+// import store from './store'
+// import ParentComponent from './ParentComponent'
+
+// const App = () => {
+//   return (
+//     <Provider store={store}>
+//       <ParentComponent />
+//     </Provider>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import { Provider } from 'react-redux'
+import store from './store'
+import Counter from './Counter'
+
+const App = () => {
+  return (
+    <div>
+      <h3>Redux Counter Example</h3>
+      <Counter />
+    </div>
+  )
+}
+export default App
